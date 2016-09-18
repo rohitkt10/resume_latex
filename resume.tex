@@ -1,0 +1,181 @@
+% resume.tex
+%
+% (c) 2002 Matthew Boedicker <mboedick@mboedick.org> (original author) http://mboedick.org
+% (c) 2003-2007 David J. Grant <davidgrant-at-gmail.com> http://www.davidgrant.ca
+%
+% This work is licensed under the Creative Commons Attribution-ShareAlike 3.0 Unported License. To view a copy of this license, visit http://creativecommons.org/licenses/by-sa/3.0/ or send a letter to Creative Commons, 171 Second Street, Suite 300, San Francisco, California, 94105, USA.
+
+\documentclass[letterpaper,11pt]{article}
+
+%-----------------------------------------------------------
+%Margin setup
+
+\setlength{\voffset}{0.1in}
+\setlength{\paperwidth}{8.5in}
+\setlength{\paperheight}{11in}
+\setlength{\headheight}{0in}
+\setlength{\headsep}{0in}
+\setlength{\textheight}{11in}
+\setlength{\textheight}{9.5in}
+\setlength{\topmargin}{-0.25in}
+\setlength{\textwidth}{7in}
+\setlength{\topskip}{0in}
+\setlength{\oddsidemargin}{-0.25in}
+\setlength{\evensidemargin}{-0.25in}
+%-----------------------------------------------------------
+%\usepackage{fullpage}
+\usepackage{shading}
+\usepackage{hyperref}
+
+%\textheight=9.0in
+\pagestyle{empty}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+%-----------------------------------------------------------
+%Custom commands
+\newcommand{\resitem}[1]{\item #1 \vspace{-2pt}}
+\newcommand{\resheading}[1]{{\large \parashade[.9]{sharpcorners}{\textbf{#1 \vphantom{p\^{E}}}}}}
+\newcommand{\ressubheading}[4]{
+\begin{tabular*}{6.5in}{l@{\extracolsep{\fill}}r}
+		\textbf{#1} & #2 \\
+		\textit{#3} & \textit{#4} \\
+\end{tabular*}\vspace{-6pt}}
+%-----------------------------------------------------------
+
+
+\begin{document}
+
+%%%%%%%%%%%%%%
+%name and address 
+%%%%%%%%%%%%%
+\begin{tabular*}{7in}{l@{\extracolsep{\fill}}r}
+\textbf{\Large Rohit Tripathy}  & +1-765-476-6988\\
+\#5 225 South River Road &  rtripath@purdue.edu \\
+West Lafayette, IN \\
+\end{tabular*}
+\\
+
+\vspace{0.1in}
+
+\resheading{Education}
+\begin{itemize}
+\item
+	\ressubheading{Purdue University}{West Lafayette, IN}{PhD., Mechanical Engineering }{January. 2016 - Present}
+	\begin{itemize}
+		\resitem{Relevant courses: Uncertainty Quantification, Computational Methods in Optimization, Bayesian Data Analysis, Machine Learning Theory.}
+	\end{itemize}
+
+\item
+	\ressubheading{Purdue University}{West Lafayette, IN}{MS., Mechanical Engineering}{August 2014-December 2015}
+	\begin{itemize}
+	%	\resitem{Graduated with Honors, \textbf{86\%} cumulative average, and Dean's Honour List each year.}
+	\resitem{Relevant courses: Applied Decision Theory and Bayesian Statistics, Finite Element Method, Computational Fluid Dynamics, Atomistic View of Materials, Fluid Mechanics.}
+	\end{itemize}
+
+\end{itemize}
+
+\resheading{Research Experience}
+\begin{itemize}
+\item
+	\ressubheading{Predictive Science Lab, Purdue University}{West Lafayette, IN}{Graduate Research Assistant}{August 2014 - Present}
+	\begin{itemize}
+		\resitem{Currently work here under the supervision of Prof. Ilias Bilionis.}
+		\resitem{Rsearch focuses on uncertainty propagation in high dimensions and small  data regime.}
+		\resitem{Developed a novel gradient-free, dimensionality reduction technique called Active subspace Gaussian process regression (ASPGP).}
+		\resitem{Implemented \texttt{Python} code for ASPGP. Open source code hosted on \texttt{github} (see 'links' section below).}
+	\end{itemize}
+\end{itemize}
+
+%%%%%%%%%%%%%
+%%%% publications 
+%%%%%%%%%%%%
+\resheading{Publications}
+\begin{itemize}
+
+\item
+	\subsection*{Gaussian processes with built-in dimensionality reduction: 
+	Applications to high-dimensional uncertainty propagation} \textit{Rohit Tripathy, Ilias Bilionis, Marcial Gonzalez; Journal of Computational Physics, Sept. 2016.}%{}{Journal of Computational Physics, Sept. 2015}{}
+	\begin{itemize}
+		\resitem{Dimensionality reduction technique which relies on discovering a low dimensional manifold known as the "active subspace" which captures maximal variation of the quantity of interest.}
+		\resitem{Method bypasses requirement of the gradient of the quantity of interest with respect to the inputs and Bayesian formulation makes the method robust to observational noise.}
+		\resitem{Method applied to a challenging high dimensional dynamical system problem of quantifying uncertainty in properties of solitary waves propagating through granular crystals.}
+	\end{itemize}
+\end{itemize}
+
+\resheading{Talks / Presentations}
+\begin{itemize}
+\item
+	\ressubheading{ASME Verification and validation Symposium}{Las Vegas, NV}{Probabistic Active subspaces (oral presentation).}{May 2016}
+
+\item 
+	\ressubheading{SIAM Purdue CSESC 2016}{Purdue University}{A novel method for gradient-free dimensionality reduction (poster presentation).}{March 2016}
+%	\begin{itemize}
+%		\resitem{Talk entitled "Probabilistic Active subspaces".}
+%		\resitem{Spoke about the gradient free active subspace method.}
+%		\resitem{Developed a novel gradient-free, dimensionality reduction technique called Active subspace Gaussian process regression (ASPGP)}
+%		\resitem{Implemented \texttt{Python} code for ASPGP. Open source code hosted on \texttt{github} (see 'links' section below).}
+%	\end{itemize}
+\end{itemize}
+
+
+%%%%%%%%%%%%%%
+%%% School project
+%%%%%%%%%%%%%%
+\resheading{Selected Coursework Projects}
+\begin{itemize}
+\item
+	\ressubheading{Optimization over the Stiefel Manifold}{}{Computational methods in optimization course, CS 520}{Jan 2016 - May 2016}
+	\begin{itemize}
+		\resitem{Implemented, in \texttt{Python}, a modified form of gradient descent on manifold space, with update scheme based on the Cayley transform.}
+	\end{itemize}
+\item
+	\ressubheading{Finite element solver for a plane stress hypoelasticity problem}{}{Finite Element Methods course, ME 681.}{Jan. 2015 - May 2015}
+	\begin{itemize}
+		\resitem{Implemented in \texttt{Python} from scratch a nonlinear finite element solver for 2D hypoelasticity problem for a square plate.}
+	\end{itemize}
+
+\item
+	\ressubheading{2-D Incompressible Navier Stokes solver}{}{Computational Fluid Dynamics course, ME 614}{Jan. 2015 - May 2015}
+	\begin{itemize}
+		\resitem{Implemented, in \texttt{Python}, from scratch, a fully conservative finite difference solver with a staggered grid formulation to solve the lid driven cavity problem.}
+	\end{itemize}
+\end{itemize}
+
+
+
+\resheading{Skills}
+\begin{description}
+\item[Languages (In order of comfort):]
+\texttt{Python}, \texttt{R}, \texttt{MATLAB}, C/C++.
+
+\item[Deep Learning frameworks:]
+\texttt{caffe}, \texttt{Theano}.
+
+\item[Other software:]
+\LaTeX, \texttt{git}, ANSYS, Solidworks.
+\end{description}
+
+\resheading{Previous work experience}
+\begin{itemize}
+\item
+	\textit{Vocational Trainee}, Hindustan Aeronautics Limited, Kanpur, India (May 2012 - June 2012). 
+\item
+	\textit{Manufacturing intern}, Scooters India, Lucknow, India (December 2012). 
+	
+\end{itemize}
+
+\resheading{Interests}
+\begin{description}
+\item[Academic:] Uncertainty Quantification,  Machine Learning, Deep learning and Artificial Intelligence, Data Analysis, Finite Element methods. Computational physics. 
+\item[Membership:] Society of Industrial and Applied Mathematics (SIAM) student member (August 2015- present), SIAM Purdue chapter Treasurer (August 2016 - present)
+\end{description}
+
+
+\resheading{Links}
+\begin{itemize}
+	\item \textbf{Bitbucket}: \href{https://bitbucket.org/rohitkt10/}{https://bitbucket.org/rohitkt10/}
+	\item \textbf{Active subspace project github}: \href{https://github.com/PredictiveScienceLab/py-aspgp}{https://github.com/PredictiveScienceLab/py-aspgp}
+\end{itemize}
+\end{document}
