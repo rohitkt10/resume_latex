@@ -63,18 +63,14 @@ West Lafayette, IN, USA \\
 \resheading{Education}
 \begin{itemize}
 \item
-	\ressubheading{Purdue University}{West Lafayette, IN}{PhD., Mechanical Engineering; GPA - 3.93/4.0}{January. 2016 - Dec 2019 (expected)}
+	\ressubheading{Purdue University}{West Lafayette, IN}{PhD., Mechanical Engineering; GPA - 3.8/4.0}{January. 2016 - Dec 2019 (expected)}
 	\begin{itemize}
 		\resitem{Advisor: Prof. Ilias Bilionis}
-		\resitem{Relevant courses: Uncertainty Quantification, Computational Methods in Optimization, Stochastic Processes, Monte Carlo Methods, Bayesian Data Analysis.}
+		\resitem{Relevant courses: Statistical Machine Learning, Computational Methods in Optimization, Stochastic Processes, Monte Carlo Methods, Decision Theory and Bayesian Statistics, Uncertainty Quantification, Numerical methods.}
 	\end{itemize}
 
 \item
 	\ressubheading{Purdue University}{West Lafayette, IN}{MS., Mechanical Engineering; GPA - 3.61/4.0}{August 2014-December 2015}
-	\begin{itemize}
-	%	\resitem{Graduated with Honors, \textbf{86\%} cumulative average, and Dean's Honour List each year.}
-	\resitem{Relevant courses: Decision Theory and Bayesian Statistics, Finite Element Method, Computational Fluid Dynamics, Atomistic Simulations, Fluid Mechanics, Numerical Methods.}
-	\end{itemize}
 	
 \item
 	\ressubheading{VIT University}{Vellore, India}{B. Tech., Mechanical Engineering; GPA - 9.04/10.0.}{July 2010-May 2014}
@@ -84,7 +80,10 @@ West Lafayette, IN, USA \\
 \resheading{Work Experience}
 \begin{itemize}
 \item
-	\textit{Givens Associate}, Argonne National Laboratory, Lemont, IL (June 2017 - August 2017). 
+	\textit{Givens Associate}, Argonne National Laboratory, Lemont, IL (June 2017 - August 2017).  \\
+\item
+	\textit{Quantitative Research (Machine Learning) Summer Associate}, JPMorgan Chase \& Co., \\
+	New York, NY (May 2018 - \textit{Present})
 \end{itemize}
 
 \resheading{Research Experience}
@@ -93,9 +92,8 @@ West Lafayette, IN, USA \\
 	\ressubheading{Predictive Science Lab, Purdue University}{West Lafayette, IN}{Graduate Research Assistant}{August 2014 - Present}
 	\begin{itemize}
 		%\resitem{Currently work here under the supervision of Prof. Ilias Bilionis.}
-		\resitem{Research focused on surrogate  modeling for uncertainty quantification.}
-		\resitem{Developed a gradient-free, dimensionality reduction technique called active subspace Gaussian process regression (ASPGP).}
-		\resitem{Currently working on deep neural  networks for uncertainty quantification.}
+		\resitem{Surrogate  modeling for high-dimensional and multifidelity uncertainty quantification.}
+		\resitem{Developed a scalable \textit{Gaussian process regression} technique and currently exploring Deep neural networks for high dimensional input uncertainty quantification tasks.}
 	\end{itemize}
 \item	
 	\ressubheading{Math. and Computer Science (MCS) division, Argonne National Lab}{Lemont, IL}{Givens associate (PhD intern)}{June 2017 - August 2017}
@@ -111,39 +109,44 @@ West Lafayette, IN, USA \\
 %%%%%%%%%%%%%
 %%%% publications 
 %%%%%%%%%%%%
-\resheading{Publications}
+\resheading{Publications and pre-prints}
 \begin{itemize}
 
 \item Rohit Tripathy, Ilias Bilionis, and Marcial Gonzalez. \textit{Gaussian processes with built-in dimensionality reduction: Applications to high-dimensional uncertainty propagation}. Journal of Computational Physics 321 (2016): 191-223.
+\item Rohit Tripathy and Ilias Bilionis. \textit{Deep UQ: Learning deep neural network surrogate models for high dimensional uncertainty quantification.} arXiv preprint arXiv:1802.00850 (2018). (under review at \textit{Journal of Computational Physics})
 \end{itemize}
 
-\resheading{Talks / Presentations}
+\resheading{Recent Talks / Presentations}
 \begin{itemize}
+\item 
+	\ressubheading{SIAM UQ 2018}{Garden Grove, CA}{Learning Deep neural network (DNN) surrogate models for uncertainty quantification.}{April 2018}
 \item
 	\ressubheading{SIAM AN 2017}{Pittsburgh, PA}{High dimensional multifidelity uncertainty quantification with deep neural networks.}{July 2017}
 \item
 	\ressubheading{SIAM DR 2017}{Pittsburgh, PA}{Discovering nonlinear active subspaces using deep neural networks.}{July 2017}
 \item
 	\ressubheading{SIAM CSE 2017}{Atlanta, GA}{Learning multiscale stochastic FEM basis functions with deep neural networks.}{March 2017}
-\item
-	\ressubheading{ASME Verification and Validation (V\&V) Symposium}{Las Vegas, NV}{Probabilistic Active subspaces.}{May 2016}
-\item 
-	\ressubheading{SIAM Purdue CSESC 2016}{Purdue University}{A novel method for gradient-free dimensionality reduction.}{March 2016}
 \end{itemize}
 
 
 %%%%%%%%%%%%%%
 %%% School project
 %%%%%%%%%%%%%%
-\resheading{Selected Coursework Projects}
+\resheading{Other Projects}
 \begin{itemize}
 \item
-	\ressubheading{Optimization over the Stiefel Manifold}{}{Computational methods in optimization course, CS 520}{Jan 2016 - May 2016}
+	\ressubheading{Uncertainty propagation using kernel ridge regression.}{}{Statistical Machine Learning course, CS 578.}{Jan. 2018 - May 2018}
 	\begin{itemize}
-		\resitem{Implemented, in \texttt{Python}, a modified form of gradient descent on manifold space, with update scheme based on the Cayley transform.}
+		\resitem{Implemented kernel ridge regression and conducted hyperparameter optimization to learn a surrogate for the forward model in a stochastic elliptic partial differential equation. Implemented code in \texttt{Python}.}
 	\end{itemize}
 \item
-	\ressubheading{Finite element solver for a plane stress hypoelasticity problem}{}{Finite Element Methods course, ME 681.}{Jan. 2015 - May 2015}
+	\ressubheading{Optimization over the Stiefel Manifold.}{}{Computational methods in optimization course, CS 520}{Jan. 2016 - May 2016}
+	\begin{itemize}
+		\resitem{Implemented, in \texttt{Python}, a modified form of gradient descent on manifold space, with update scheme based on the Cayley transform.}
+		
+	\end{itemize}
+\item
+	\ressubheading{Finite element solver for a plane stress hypoelasticity problem.}{}{Finite Element Methods course, ME 681.}{Jan. 2015 - May 2015}
 	\begin{itemize}
 		\resitem{Implemented in \texttt{Python} from scratch a nonlinear finite element solver for 2D hypoelasticity problem for a square plate.}
 	\end{itemize}
@@ -161,36 +164,34 @@ West Lafayette, IN, USA \\
 \resheading{Skills}
 \begin{description}
 \item[Languages (In order of comfort):]
-\texttt{Python}, \texttt{R}, \texttt{MATLAB}.
+Python, R, MATLAB.
 
 \item[Deep Learning frameworks:]
-Familiarity with \texttt{caffe}, \texttt{Theano} and \texttt{tensorflow}.
+Theano and tensorflow.
 
-\item[Other software:]
-\LaTeX, \texttt{git}.
+\item[Bayesian Machine Learning frameworks:]
+pymc, pymc3 and Edward.
 \end{description}
 
-\resheading{Academic Interests}
+\resheading{Technical Interests}
 %\begin{description}
 %\item[Academic:] 
-Uncertainty Quantification,  Machine Learning, Deep learning and Artificial Intelligence, Data Analysis, Finite Element methods. Computational physics. 
+Machine Learning, Deep learning and Artificial Intelligence, Data Analysis, Big data, Scalable Inference, Bayesian data analysis, Quantitative finance, Quantitative research, Algorithmic trading. 
 %\end{decription}
 \resheading{Professional Memberships}
 \begin{itemize}
-\item Academic and Professional Development (APD) Committee of Purdue Graduate Student Government (PGSG) [\textit{September 2014 - April 2015}].
 \item Society of Industrial and Applied Mathematics (SIAM) student member [\textit{August 2015- present}].
-\item SIAM Purdue chapter Treasurer [\textit{August 2016 - present}].
-\item American Society of Mechanical Engineers (ASME) student member [\textit{January 2016-present}].
+\item SIAM Purdue chapter Treasurer [\textit{August 2016 - May 2017}].
 \end{itemize}
 
-\resheading{Mentorship Experience}
-Mentored {\color{blue}\underline{\href{https://nanohub.org/groups/ncnsurf}{NCN-SURF}}} student interns in the Predictive Science Lab in 2015 and 2016.
+%\resheading{Mentorship Experience}
+%Mentored {\color{blue}\underline{\href{https://nanohub.org/groups/ncnsurf}{NCN-SURF}}} student interns in the \href{https://www.predictivesciencelab.org}{Predictive Science Lab} in 2015 and 2016.
 
 
 \resheading{Links}
 \begin{itemize}
 	\item \textbf{LinkedIn}: {\color{blue}\underline{\href{http://tinyurl.com/p4myxe8}{http://tinyurl.com/p4myxe8}}}.
-	\item \textbf{Bitbucket}: {\color{blue}\underline{\href{https://bitbucket.org/rohitkt10/}{https://bitbucket.org/rohitkt10/}}}.
+	\item \textbf{Speakerdeck}: {\color{blue}\underline{\href{http://speakerdeck.com/rohitkt10}{http://speakerdeck.com/rohitkt10}}}.
 	\item \textbf{Active subspace project github}: {\color{blue}\underline{\href{https://github.com/PredictiveScienceLab/py-aspgp}{https://github.com/PredictiveScienceLab/py-aspgp}}}.
 \end{itemize}
 \end{document}
